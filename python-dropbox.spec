@@ -25,7 +25,7 @@ dropbox-12.0.2-relax-stone-deps.patch
 Official Dropbox API Client
 
 %prep -a
-sed -i -e 's,pytest_runner==,pytest_runner>=,g' setup.py
+sed -i -e 's,pytest-runner==,pytest-runner>=,g' setup.py
 
 %files
 %{py_sitedir}/dropbox
