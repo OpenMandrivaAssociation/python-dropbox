@@ -1,0 +1,21 @@
+diff -up dropbox-12.0.2/setup.py.omv~ dropbox-12.0.2/setup.py
+--- dropbox-12.0.2/setup.py.omv~	2025-02-09 21:47:28.879338942 +0100
++++ dropbox-12.0.2/setup.py	2025-02-09 21:47:34.304470586 +0100
+@@ -27,7 +27,7 @@ version = eval(line.split('=', 1)[1].str
+ install_reqs = [
+     'requests>=2.16.2',
+     'six >= 1.12.0',
+-    'stone>=2,<3.3.3',
++    'stone>=2,<4.0.0',
+ ]
+ 
+ setup_requires = [
+diff -up dropbox-12.0.2/test/requirements.txt.omv~ dropbox-12.0.2/test/requirements.txt
+--- dropbox-12.0.2/test/requirements.txt.omv~	2025-02-09 21:47:38.461164371 +0100
++++ dropbox-12.0.2/test/requirements.txt	2025-02-09 21:47:43.195112061 +0100
+@@ -2,4 +2,4 @@ pytest
+ mock
+ pytest-mock
+ coverage
+-stone>=2,<3.3.3
++stone>=2,<4.0.0
