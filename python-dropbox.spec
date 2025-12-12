@@ -1,6 +1,6 @@
 Name:		python-dropbox
 Version:	12.0.2
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/d/dropbox/dropbox-%{version}.tar.gz
 Summary:	Official Dropbox API Client
 URL:		https://pypi.org/project/dropbox/
