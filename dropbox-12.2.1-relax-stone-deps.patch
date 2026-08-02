@@ -1,0 +1,38 @@
+--- dropbox-12.2.1/pyproject.toml	2026-07-20 18:43:04.000000000 +0200
++++ dropbox-12.2.1/pyproject.toml	2026-08-03 01:58:44.307702805 +0200
+@@ -13,7 +13,7 @@ license-files = ["LICENSE"]
+ authors = [{ name = "Dropbox", email = "dev-platform@dropbox.com" }]
+ dependencies = [
+     "requests>=2.16.2",
+-    "stone>=3.5.3,<4",
++    "stone>=2,<4.0.0",
+ ]
+ classifiers = [
+     "Development Status :: 5 - Production/Stable",
+@@ -34,7 +34,7 @@ Homepage = "http://www.dropbox.com/devel
+ Source = "https://github.com/dropbox/dropbox-sdk-python"
+ 
+ [project.optional-dependencies]
+-test = ["pytest", "mock", "pytest-mock", "coverage", "stone>=3.5.3,<4"]
++test = ["pytest", "mock", "pytest-mock", "coverage", "stone>=2,<4.0.0"]
+ docs = ["sphinx", "sphinx_rtd_theme"]
+ dev = ["flake8", "twine", "wheel", "build"]
+ 
+--- dropbox-12.2.1/requirements.txt	2026-07-20 18:43:04.000000000 +0200
++++ dropbox-12.2.1/requirements.txt	2026-08-03 01:58:44.308487124 +0200
+@@ -1,6 +1,6 @@
+ # Dependencies required for installation (keep in sync with pyproject.toml)
+ requests>=2.16.2
+-stone>=3.5.3,<4
++stone>=2,<4.0.0
+ # Other dependencies for development
+ pytest
+ sphinx
+--- dropbox-12.2.1/test/requirements.txt	2026-07-20 18:43:04.000000000 +0200
++++ dropbox-12.2.1/test/requirements.txt	2026-08-03 01:58:44.309300164 +0200
+@@ -2,4 +2,4 @@ pytest
+ mock
+ pytest-mock
+ coverage
+-stone>=3.5.3,<4
++stone>=2,<4.0.0

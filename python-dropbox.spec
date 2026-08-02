@@ -1,6 +1,6 @@
 Name:		python-dropbox
-Version:	12.0.2
-Release:	2
+Version:	12.2.1
+Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/d/dropbox/dropbox-%{version}.tar.gz
 Summary:	Official Dropbox API Client
 URL:		https://pypi.org/project/dropbox/
@@ -19,13 +19,10 @@ BuildSystem:	python
 BuildArch:	noarch
 
 %patchlist
-dropbox-12.0.2-relax-stone-deps.patch
+dropbox-12.2.1-relax-stone-deps.patch
 
 %description
 Official Dropbox API Client
-
-%prep -a
-sed -i -e 's,pytest-runner==,pytest-runner>=,g' setup.py
 
 %files
 %{py_sitedir}/dropbox
